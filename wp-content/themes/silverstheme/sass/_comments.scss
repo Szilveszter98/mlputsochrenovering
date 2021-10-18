@@ -1,0 +1,77 @@
+.commentlist, #comments{
+    display: none;
+}
+.comment-respond{
+    text-align: center;
+    padding: rem(30px) rem(0px) rem(30px) rem(0px);
+    
+}
+.comment-form-url, .comment-form-cookies-consent{
+    display: none;
+}
+.comment-form-author, .comment-form-email{
+    display: grid;
+    justify-content: center;
+    padding-top: 10px;
+    margin: auto;
+    font-size: rem(18px);
+    font-family: 'Rosario', sans-serif;
+   
+    input{
+        background-color: gray;
+        color: white; 
+        outline: none;
+        height: rem(40px);
+        border-radius: rem(10px);
+        font-size: rem(18px);
+        border:0;
+        max-width: fit-content;
+    }
+
+}
+.comment-form-comment{
+    label{
+        display: none;
+    }
+}
+.comment-reply-title{
+    color: lightgray;
+    font-size: rem(25px);
+    max-width: rem(900px);
+    margin: auto;
+    font-family: $Questrial;
+    letter-spacing: 1px;
+}
+#comment{
+    font-family: $Questrial;
+    outline: none;
+    background-color: gray;
+    color: white;
+    font-size: rem(18px);
+    border-radius: rem(10px);
+    max-width: rem(850px);
+    
+}
+
+.submit{
+    font-family: $Questrial;
+    color: black;
+    width: auto;
+    background-color: $button;
+    border: none;
+    height: rem(40px);
+    border-radius: rem(5px);
+    font-size: rem(18px);	
+    outline: none;
+    text-align: center;
+}
+.submit:hover{
+background-color: $buttonHover;
+
+}
+
+@media only screen and (max-width:  rem(500px)) {
+    #comment{
+        max-width: rem(320px);
+    }
+}

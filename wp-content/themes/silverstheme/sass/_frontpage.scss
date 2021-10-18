@@ -1,0 +1,429 @@
+.frontpage{
+    .landing-section{
+        padding-top: 30px;
+        background-color: $mainYellow;
+        height: 700px;
+        .bg-image{
+            clip-path: ellipse(95% 53% at 44% 43%);
+            position: absolute;
+            z-index: 1;
+            img{
+                object-fit: cover;
+                width: 100vw;
+                height:700px;
+                
+            }
+        }
+        .landing-section-content{
+            width: 1300px;
+            z-index: 2;
+            position: relative;
+            margin: 30px auto;
+            //margin-top?
+            h1{
+                font-size: 40px;
+                font-family: $Oswald;
+            }
+            h2{
+                line-height: 26px;
+                font-weight: 100;
+                font-size: 18px;
+                font-family: $Questrial;
+            }
+            .contact-button{
+                margin-top: 50px;
+                width: 200px;
+                height: 50px;
+                background-color: $mainYellow;
+                border-radius: 10px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                a{  
+                    color: black;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-family: $Questrial;
+                    margin: auto;
+                }
+            &:hover{
+                background-color: $buttonHover;
+            }
+            }
+        }
+    }
+    .frontpage-content{
+        background: linear-gradient(#ffa500, #3D3C3C);
+        .puff-gallery{
+            z-index: 10;
+            max-width: 1300px;
+            margin: auto;
+            h1{
+                font-family: $Questrial;
+                font-size: 30px;
+                font-weight: 100;
+                margin: 0;
+                color: black;
+            }
+            h2{
+                margin-top: 50px;
+                font-family: $Questrial;
+                font-size: 18px;
+                font-weight: 100;
+                line-height: 26px;
+                color: black;
+            }
+
+        }
+    }
+}
+    //Referencer
+    .referenceContainer{
+        max-width: 1300px;
+        width: auto;
+        margin: auto;
+        padding-top: rem(50px);
+        text-align: center;
+        color: white;
+        
+        
+        .referenceContainerTitle{
+            
+            text-align: left;
+            color:black;
+            margin: 0;
+            font-size: 40px;
+            font-family: $Oswald;
+            padding: rem(30px) rem(0) rem(40px) rem(0px);
+        }
+        
+        .references{
+            max-width: rem(900px);
+            margin: auto;
+            padding-bottom: rem(30px);
+            font-family: $Questrial;
+            
+            .referenceAuthor{
+                font-family: $Questrial;
+                font-weight: 100;
+                font-size: rem(25px);
+                
+            }
+            h5{
+                    font-weight: 100;
+                    font-size: rem(18px);
+                }
+            .referenceComment{
+                font-size: rem(23px);
+                display: inline-flex;
+                
+                max-width: rem(900px);
+                //font-family: ;
+                h3{
+                    font-family: $Questrial;
+                    font-size: rem(22px);
+                    color: white;
+                    font-weight: 100;
+                    margin: rem(15px);
+                }
+                
+            }
+            
+        }
+    }
+    //Offer
+    .offer{
+        background-color: rgb(31, 30, 30);
+        height: auto;
+        width: 100%;
+        display: inline-flex;
+        
+        
+        .whatwedo{
+        
+            width: 50%;
+            color: lightgray;
+            h3{
+                font-family: $Questrial;
+                font-size: rem(25px);
+                padding-top: rem(30px);
+                text-align: center;
+                color: white;
+                letter-spacing: 1px;
+                margin-top: 0px;
+            }
+            li{
+                font-family: $Questrial;
+                letter-spacing: 1px;
+                margin: 5px;
+                font-size: 20px;
+                text-align: center;
+                color: $textColor;
+                list-style: none;
+
+            }
+        }
+    
+        .offertContainer{
+            width: 50%;
+                .offer-title{
+                    letter-spacing: 1px;
+                    font-size: rem(25px);
+                    padding-top: rem(30px);
+                    text-align: center;
+                    color: white;
+                    font-family: $Questrial;
+                }
+                .offer-description{
+                    letter-spacing: 1px;
+                    font-size: rem(18px);
+                    padding: rem(30px);
+                    margin: auto;
+                    max-width: rem(900px);
+                    text-align: center;
+                    color:gray;
+                    font-family: $Questrial;
+                
+
+                }
+        }
+    }
+    //Contact form button
+        .bttnContainer{
+            text-align: center;
+            padding-bottom: 30px;
+           
+        
+            
+            button{
+                    //font-family: 'Rosario', sans-serif;
+                    
+                    font-size: 1.3em;
+                    min-width: 160px;
+                    background-color: $button;
+                    border: none;
+                    height: rem(40px);
+                    border-radius: rem(5px);
+                    outline: none;
+                    text-align: center;
+                    font-family: $Questrial;
+                    
+            }
+            button:hover{
+                background-color: $buttonHover;
+                
+            }
+        }
+    //ContactForm
+        .contactFormContainer{
+            input{
+                outline: none;
+            }
+
+            .contactForm{
+                margin: 0;
+                background-color: rgb(31, 30, 30);
+                text-align: center;
+                color: white;
+                padding-bottom: rem(30px);
+                p{
+                    font-size: rem(18px);
+                }
+                .ajax-loader{
+                    display: none;
+                }
+                .wpcf7-submit{
+                    color: black;
+                    width: auto;
+                    background-color: $button;
+                    border: none;
+                    height: 40px;
+                    border-radius: 5px;
+                    font-size: 1.3em;	
+                    outline: none;
+                    text-align: center;
+                }
+                .wpcf7-submit:hover{
+                    background-color: $buttonHover;
+                }
+            }   
+        }
+
+        @media only screen and (max-width:955px) {
+            .frontpage{
+                .landing-section{
+                   .bg-image{
+                       img{
+                           height: 630px;
+                       }
+                   }
+                    .landing-section-content{                   
+                        width: auto;
+                        height: auto;
+                        margin: 0;
+                        h1{
+                            margin: 20px;
+                            font-size: 32px;
+                        }
+                        h2{
+                            margin: 20px;
+                            font-size: 18px;
+                        }
+                        .contact-button{
+                            margin: 50px 20px 20px 20px;
+                            width: 100px;
+                            height: 25px;
+                            background-color: $mainYellow;
+                            border-radius: 10px;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                          
+                            a{  
+                                color: black;
+                                text-decoration: none;
+                                font-size: 14px;
+                                font-family: $Questrial;
+                                margin: auto;
+                            }
+                        &:hover{
+                            background-color: $buttonHover;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width:500px) {
+            .frontpage{
+                .landing-section{
+                    height: 600px;
+                    
+                    .landing-section-content{                   
+                        width: auto;
+                        height: auto;
+                        h1{
+                            margin: 20px;
+                            font-size: 26px;
+                        }
+                        h2{
+                            margin: 20px;
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                        .contact-button{
+                            margin: 50px 20px 20px 20px;
+        
+                            width: 100px;
+                            height: 25px;
+                            background-color: $mainYellow;
+                            border-radius: 10px;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                          
+                            a{  
+                                color: black;
+                                text-decoration: none;
+                                font-size: 14px;
+                                font-family: $Questrial;
+                                margin: auto;
+                            }
+                        &:hover{
+                            background-color: $buttonHover;
+                        }
+                        }
+                    }
+                }}
+        }
+        @media only screen and (max-width:600px) {
+            .offer{
+                display: block;
+                
+                .whatwedo{
+                    box-shadow: none;
+                    margin: auto;
+                    h3{
+                        font-size: 18px;
+                    }
+                    ul{
+                        padding: 0;
+                        li{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                
+                .offertContainer{
+                    margin: auto;
+                    .offer-title{
+                        padding-top: 15px;
+                        h3{
+                            font-size: 18px;
+                        }
+                    }
+                    .offer-description{
+                        padding: 15px;
+                        h3{
+                            font-size: 15px;
+                        }
+                    }
+                
+                    
+                #commentform{
+                    padding: 0;
+                    margin: auto;
+                    width: 100%;
+                }
+                    .contactFormContainer input, textarea{
+                        width: 200px;
+                        margin: auto;
+                    }
+                }
+            }
+           
+        }
+        @media only screen and (max-width:1350px) {
+            
+            .referenceContainer{            
+                width: auto;          
+                .referenceContainerTitle{ 
+                    font-size: 20px;
+                }
+                .references{
+                    
+                    .referenceAuthor{
+                        font-size: rem(18px);
+                    }
+                    h5{
+                            font-size: rem(15px);
+                        }
+                    .referenceComment{
+                        font-size: rem(18px);
+                        h3{
+                            font-size: rem(18px);
+                        }
+                        
+                    }
+                    
+                }
+            }
+            #reply-title{
+                font-size: 18px;
+                text-align: left;
+            }
+           
+            #referenser{
+                padding: 30px;
+            }
+            #respond{
+                padding: 30px;
+            }
+            #comment{
+                width: -webkit-fill-available;
+            }
+            
+        }
+       
+    
+        

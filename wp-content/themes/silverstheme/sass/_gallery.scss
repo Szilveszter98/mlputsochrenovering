@@ -1,0 +1,81 @@
+@import "../../../../node_modules/@splidejs/splide/dist/css/splide.min.css";
+.galleryContainer{
+  padding: rem(90px) rem(0px) rem(25px) rem(0px);
+  .gallery{
+     color: black;
+      background-color: transparent;
+      width: rem(955px);
+      margin: auto;
+      
+      box-shadow: rem(3px) rem(3px) rem(17px) rem(3px) black;
+      .splide__pagination{
+        display: none;
+      }
+      .splide__pagination__page {
+        background-color:#000;
+      }
+      .splide__pagination__page.is-active{
+        background-color: $textColor;
+      }
+      
+      iframe{
+        height: rem(473px);
+        width: rem(955px);
+        object-fit: cover;
+      }
+      img{
+  
+        object-fit: cover;
+        width: rem(955px);
+        max-height: rem(473px);
+      }
+  }
+}
+@media only screen and (max-width:rem(1200px)) {
+
+ 
+  .gallery{
+    max-width: rem(706px);
+    height: auto;
+    border: none;
+    box-shadow: none;}
+    .galleryContainer .gallery iframe{
+      height: rem(345px);
+      width: rem(706px);
+      
+      
+    }
+    .galleryContainer .gallery img{
+          height: rem(345px);
+        width: rem(706px);
+        object-fit: cover;
+        
+      }
+    }
+  
+
+@media only screen and (max-width:rem(705px)) {
+
+.gallery{
+ max-width: rem(320px);
+  height:  rem(170px);
+}
+  
+  .galleryContainer .gallery iframe {
+    max-height: rem(170px);
+    width: rem(320px);
+    
+  }
+  .galleryContainer .gallery img{
+        max-height: rem(170px);
+      width: rem(320px);
+      object-fit: cover;
+      
+    }
+  
+
+
+
+}
+
+

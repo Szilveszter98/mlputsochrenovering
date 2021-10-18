@@ -1,0 +1,134 @@
+
+.puff_galleries{
+    padding: 30px;
+    max-width: rem(1300px);
+    margin: 0 auto;  
+    text-align: left;
+    font-family: 'Rosario', sans-serif;
+    h1{
+      margin: 0;
+      font-size: 40px;
+      font-family: $Oswald;
+    }
+    h2{
+      line-height: 26px;
+      font-weight: 100;
+      font-size: 18px;
+      font-family: $Questrial;
+    }
+    .puff_gallery{
+      height: auto;
+    
+      .puff_galleries_title{
+        text-align: left;
+        font-weight: 600;
+        font-family: $Oswald;
+        font-size: rem(25px);
+        color:black;
+      }
+
+      .puff_gallery_content{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        .puff_galleries_img_container{
+          transition: 1.5s;
+        padding-top: rem(20px);
+        margin: auto;
+        .puff_data{
+            visibility: hidden;
+            
+            
+            .puff_data_container{
+                position: absolute;
+                background: rgba(0, 0, 0, 0.581);
+                width: rem(310px);
+                height: auto;
+                color: $mainYellow;
+                letter-spacing: 1px;
+                margin-top: rem(242px);
+                font-size: rem(15px);
+                font-weight: 600;  
+                font-family: $Questrial; 
+                bottom: 0;
+              
+                p{
+                  max-width: 310px;
+                  font-size: rem(24px);
+                  margin: 0;
+                }
+              }
+        }
+          img{
+            object-fit: cover;
+            width: rem(310px);
+            height: rem(310px);
+            margin-right: rem(5px);
+          }
+        }
+        .puff_galleries_img_container:hover{
+          transform: scale(1.5);
+          
+          .puff_data{
+            transition: 2s;
+            visibility: visible;}
+      }
+      }
+    }
+  .sm_button_container{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    
+    a{
+      color: black;
+      i{
+        transition: 1s;
+      }
+      &:hover{
+        i{
+          transform: scale(1.4);
+        }
+          
+          color: white;  
+      }
+    }
+    
+  }
+  }
+  @media only screen and (max-width:  rem(950px)) {
+    #puff_image > img{
+      margin: 0;
+    }
+    body > article > div.puff_galleries > div.puff_gallery > div.puff_gallery_content > div.puff_galleries_img_container{
+    margin: auto;
+    }
+    #referens_arbete{
+      text-align: center;
+      h1{
+      
+      font-size: 26px;
+      }
+      h2{
+        margin: 20px;
+        text-align: left;
+        font-size: 15px;
+      }
+    } 
+    .puff_galleries .puff_gallery .puff_galleries_title{
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width:  rem(400px)) {
+    #puff_image > img{
+      width: 250px;
+      height: 250px;
+      margin: 0;
+    }
+    #puff_data > .puff_data_container{
+      width: 250px;
+    }
+  }
+
